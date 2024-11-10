@@ -1,61 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="resume">
-        <div class="header">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <div class="name-title">
-                <h1>SIRIYAKORN SUKID</h1>
-                <h2>Computer Science</h2>
-                <p>"I am a second-year computer science student with a strong interest in application development, programming, and data analysis. I am skilled in programming languages such as Python and Java and have experience working in group projects. I am eager to learn and improve my skills to apply them in real-world applications."</p>
-            </div>
-        </div>
-        
-        <div class="section education">
-            <h3>Education</h3>
-            <p><strong>University of Phayao</strong></p>
-            <p>Faculty of Information and Communication Technology, Department of Computer Science</p>
-        </div>
+<html>
+ <head>
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      color: #333;
+   }
+   .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+   }
+   .header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #4a148c;
+      padding-bottom: 20px;
+   }
+   .header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #4a148c;
+      margin-bottom: 20px;
+   }
+   .header h1 {
+      font-size: 32px;
+      margin: 10px 0 5px;
+      color: #4a148c;
+   }
+   .header h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #555;
+   }
+   .header p {
+      font-size: 16px;
+      color: #777;
+   }
+   .section {
+      margin: 20px 0;
+   }
+   .section h3 {
+      font-size: 22px;
+      color: #4a148c;
+      margin-bottom: 10px;
+   }
+   .section p {
+      font-size: 16px;
+      color: #555;
+   }
+   .skills, .contact, .languages {
+      display: inline-block;
+      width: 48%;
+      vertical-align: top;
+      margin-bottom: 20px;
+   }
+   .skills ul, .languages ul {
+      list-style: none;
+      padding: 0;
+   }
+   .skills ul li, .languages ul li {
+      margin: 10px 0;
+   }
+   .skills ul li span, .languages ul li span {
+      display: inline-block;
+      width: 120px;
+   }
+   .skills ul li .bar {
+      display: inline-block;
+      width: 200px;
+      height: 8px;
+      background-color: #ddd;
+      position: relative;
+      top: 2px;
+      border-radius: 5px;
+   }
+   .skills ul li .bar span {
+      display: block;
+      height: 100%;
+      border-radius: 5px;
+   }
+   .skills ul li .bar span.python {
+      width: 25%;
+      background-color: #4a148c;
+   }
+   .skills ul li .bar span.sql {
+      width: 75%;
+      background-color: #4a148c;
+   }
+   .skills ul li .bar span.project {
+      width: 80%;
+      background-color: #4a148c;
+   }
+   .experience {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+   }
+   .experience h3 {
+      background-color: #4a148c;
+      color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+   }
+   .experience ul {
+      list-style: none;
+      padding: 0;
+   }
+   .experience ul li {
+      margin: 10px 0;
+   }
+   .contact p {
+      margin: 5px 0;
+   }
+   .contact .fa {
+      margin-right: 8px;
+      color: #4a148c;
+   }
+   .languages ul li {
+      font-size: 16px;
+   }
+   @media screen and (max-width: 768px) {
+      .skills, .contact, .languages {
+         width: 100%;
+      }
+   }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <img alt="Profile picture of a young woman with long black hair, wearing a white shirt." height="150" src="https://storage.googleapis.com/a1aa/image/WXwyEFFvffqdvE5bh0QrJrzfg0z4P8CcA17mhuX0XYXDQNfOB.jpg" width="150"/>
+    <h1>SIRIYAKORN SUKID</h1>
+    <h2>COMPUTER SCIENCE</h2>
+    <p>"I am a second-year computer science student with a strong interest in application development, programming, and data analysis. I am skilled in programming languages such as Python and Java and have experience working in group projects. I am eager to learn and improve my skills to apply them in real-world applications."</p>
+   </div>
+   
+   <div class="section">
+    <h3>EDUCATION</h3>
+    <p>University of Phayao</p>
+    <p>Faculty of Information and Communication Technology, Department of Computer Science</p>
+   </div>
 
-        <div class="section skills-summary">
-            <h3>Skills Summary</h3>
-            <p>Python, Java - 25%</p>
-            <p>SQL - 75%</p>
-            <p>Project Management - 80%</p>
-        </div>
+   <div class="section skills">
+    <h3>SKILLS SUMMARY</h3>
+    <ul>
+     <li>Python, Java
+      <span class="bar">
+       <span class="python"></span>
+      </span>
+      25%
+     </li>
+     <li>SQL
+      <span class="bar">
+       <span class="sql"></span>
+      </span>
+      75%
+     </li>
+     <li>Project Management
+      <span class="bar">
+       <span class="project"></span>
+      </span>
+      80%
+     </li>
+    </ul>
+   </div>
+   
+   <div class="section contact">
+    <h3>CONTACT</h3>
+    <p><i class="fa fa-phone"></i> Phone: 093-1625308</p>
+    <p><i class="fa fa-envelope"></i> Website: 66025818@up.ac.th</p>
+    <p><i class="fa fa-map-marker-alt"></i> Address: Lampang, Thailand 52240</p>
+   </div>
+   
+   <div class="section experience">
+    <h3>EXPERIENCE</h3>
+    <ul>
+     <li>Developed a basic application for student data management as part of a programming development course.</li>
+     <li>Utilized Python and SQL to design a data storage system and created a simple user interface.</li>
+     <li>Practiced teamwork by dividing tasks and planning together to complete the project on schedule.</li>
+     <li>Gained experience in using Python for data management and basic programming.</li>
+    </ul>
+   </div>
 
-        <div class="section experience">
-            <h3>Experience</h3>
-            <ul>
-                <li>Developed a basic application for student data management as part of a programming development course.</li>
-                <li>Utilized Python and SQL to design a data storage system and created a simple user interface.</li>
-                <li>Practiced teamwork by dividing tasks and planning together to complete the project on schedule.</li>
-                <li>Gained experience in using Python for data management and basic programming.</li>
-            </ul>
-        </div>
-
-        <div class="section skills">
-            <h3>Skills</h3>
-            <p>SQL, Python, Java</p>
-        </div>
-
-        <div class="section languages">
-            <h3>Languages</h3>
-            <p>English, Thai</p>
-        </div>
-
-        <div class="section contact">
-            <h3>Contact</h3>
-            <p>Phone: 093-1625308</p>
-            <p>Email: 66025818@up.ac.th</p>
-            <p>Address: Lampang, Thailand 52240</p>
-        </div>
-    </div>
-</body>
+   <div class="section languages">
+    <h3>LANGUAGE</h3>
+    <ul>
+     <li>English</li>
+     <li>Thai</li>
+    </ul>
+   </div>
+  </div>
+ </body>
 </html>
+
