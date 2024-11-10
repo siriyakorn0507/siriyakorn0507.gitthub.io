@@ -1,44 +1,61 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="name-title">
+                <h1>SIRIYAKORN SUKID</h1>
+                <h2>Computer Science</h2>
+                <p>"I am a second-year computer science student with a strong interest in application development, programming, and data analysis. I am skilled in programming languages such as Python and Java and have experience working in group projects. I am eager to learn and improve my skills to apply them in real-world applications."</p>
+            </div>
+        </div>
+        
+        <div class="section education">
+            <h3>Education</h3>
+            <p><strong>University of Phayao</strong></p>
+            <p>Faculty of Information and Communication Technology, Department of Computer Science</p>
+        </div>
 
-    <title>A very simple example</title>
+        <div class="section skills-summary">
+            <h3>Skills Summary</h3>
+            <p>Python, Java - 25%</p>
+            <p>SQL - 75%</p>
+            <p>Project Management - 80%</p>
+        </div>
 
-    <style>
+        <div class="section experience">
+            <h3>Experience</h3>
+            <ul>
+                <li>Developed a basic application for student data management as part of a programming development course.</li>
+                <li>Utilized Python and SQL to design a data storage system and created a simple user interface.</li>
+                <li>Practiced teamwork by dividing tasks and planning together to complete the project on schedule.</li>
+                <li>Gained experience in using Python for data management and basic programming.</li>
+            </ul>
+        </div>
 
-      .description {
-        padding-top: 40px;
-        font-weight: bold;
-      }
+        <div class="section skills">
+            <h3>Skills</h3>
+            <p>SQL, Python, Java</p>
+        </div>
 
-    </style>
+        <div class="section languages">
+            <h3>Languages</h3>
+            <p>English, Thai</p>
+        </div>
 
-    <script>
-
-      function start() {
-        setInterval(function() {
-          const red = Math.floor(Math.random() * 256) + 1;
-          const green = Math.floor(Math.random() * 256) + 1;
-          const blue = Math.floor(Math.random() * 256) + 1;
-          document.getElementById("myHeading").style.color =
-            `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`;
-        }, 250);
-      }
-
-    </script>
-
-  </head>
-
-  <body onLoad="start();">
-
-    <h1 id="myHeading">My name is SIRIYAKORN SUKID</h1>
-    <hr />
-    <div class="description">This is a very simple example that shows HTML, CSS, and JS</div>
-
-  </body>
-
+        <div class="section contact">
+            <h3>Contact</h3>
+            <p>Phone: 093-1625308</p>
+            <p>Email: 66025818@up.ac.th</p>
+            <p>Address: Lampang, Thailand 52240</p>
+        </div>
+    </div>
+</body>
 </html>
